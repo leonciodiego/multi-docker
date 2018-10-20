@@ -17,4 +17,4 @@ after_success:
   - docker push leonciodiego/multi-client
   - docker push leonciodiego/multi-nginx
   - docker push leonciodiego/multi-server
-  - docker push sleonciodiego/multi-worker
+  - docker push leonciodiego/multi-worker
