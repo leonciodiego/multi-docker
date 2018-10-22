@@ -20,7 +20,7 @@ after_success:
   - docker push leonciodiego/multi-worker
 
 deploy:
-  provider: elasticbeanstalk
+  provider: elasticbeanstalk1
   region: us-west-2
   app: AWSAppWeb
   env: multi-docker
