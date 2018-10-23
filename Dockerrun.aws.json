@@ -5,7 +5,7 @@
       "name": "client",
       "image": "leonciodiego/multi-client",
       "hostname": "client",
-      "essential": true,
+      "essential": false,
       "memory": 128
     },
     {
@@ -26,14 +26,14 @@
       "name": "nginx",
       "image": "leonciodiego/multi-nginx",
       "hostname": "nginx",
-      "essential": false,
+      "essential": true,
       "portMappings": [
         {
           "hostPort": 80,
           "containerPort": 80
         }
       ],
-      "Links": ["client", "server"],
+      "links": ["client", "server"],
       "memory": 128
     }
   ]
